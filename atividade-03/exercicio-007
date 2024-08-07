@@ -1,1 +1,62 @@
+1. Fazer Café:
+- Descrição: Escreva um pseudocódigo para fazer uma xícara de café.
+- Pseudocódigo:
 
+Algoritmo FazerCafe
+// Instruções para fazer café
+Escreva "1. Ferva água."
+Escreva "2. Adicione pó de café à cafeteira."
+Escreva "3. Despeje a água quente sobre o pó."
+Escreva "4. Espere alguns minutos."
+Escreva "5. Coe o café e sirva."
+Fim Algoritmo
+RESPOSTA:#include <stdio.h>
+
+int main() {
+    printf("1. Ferva água.\n");
+    printf("2. Adicione pó de café à cafeteira.\n");
+    printf("3. Despeje a água quente sobre o pó.\n");
+    printf("4. Espere alguns minutos.\n");
+    printf("5. Coe o café e sirva.\n");
+    return 0;
+}
+2. Fritar um Ovo:
+- Descrição: Escreva um pseudocódigo para fritar um ovo.
+- Pseudocódigo:RESPOSTA:#include <stdio.h>
+
+int main() {
+    printf("1. Quebre o ovo em uma tigela.\n");
+    printf("2. Adicione um pouco de sal e pimenta ao gosto.\n");
+    printf("3. Aqueça uma frigideira com óleo ou manteiga.\n");
+    printf("4. Despeje o ovo na frigideira e cozinhe até ficar pronto.\n");
+    printf("5. Sirva quente.\n");
+    return 0;
+}
+
+3.  Atravessar uma Rua:
+- Descrição: Escreva um pseudocódigo para atravessar uma rua com segurança.
+- Pseudocódigo:
+RESPOSTA:#include <stdio.h>
+
+int main() {
+    printf("1. Pare e observe os sinais de trânsito.\n");
+    printf("2. Verifique se há veículos se aproximando.\n");
+    printf("3. Espere até que o sinal de trânsito esteja verde ou até que não haja veículos se aproximando.\n");
+    printf("4. Atravessar a rua com cuidado e atenção.\n");
+    printf("5. Chegue ao outro lado da rua com segurança.\n");
+    return 0;
+}
+4. Fazer uma Vitamina de Banana:
+- Descrição: Escreva um pseudocódigo para preparar uma vitamina de banana.
+- Pseudocódigo:
+RESPOSTA:#include <stdio.h>
+
+int main() {
+    printf("1. Lave e descasque uma banana.\n");
+    printf("2. Adicione a banana ao liquidificador.\n");
+    printf("3. Adicione leite ou iogurte ao liquidificador.\n");
+    printf("4. Adicione açúcar ou mel ao gosto.\n");
+    printf("5. Bata tudo no liquidificador até ficar homogêneo.\n");
+    printf("6. Sirva a vitamina de banana fresca.\n");
+    return 0;
+}
