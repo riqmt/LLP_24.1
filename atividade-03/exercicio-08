@@ -1,1 +1,103 @@
+1. Calculadora Simples
+- Crie um programa que leia dois números inteiros do usuário e exiba a soma, subtração, multiplicação e divisão desses números.
+RESPOSTA:#include <stdio.h>
 
+int main() {
+    int num1, num2;
+
+    printf("Digite o primeiro número inteiro: ");
+    scanf("%d", &num1);
+
+    printf("Digite o segundo número inteiro: ");
+    scanf("%d", &num2);
+
+    printf("Soma: %d\n", num1 + num2);
+    printf("Subtração: %d\n", num1 - num2);
+    printf("Multiplicação: %d\n", num1 * num2);
+
+    if (num2 != 0) {
+        printf("Divisão: %d\n", num1 / num2);
+    } else {
+        printf("Erro: não é possível dividir por zero!\n");
+    }
+
+    return 0;
+}
+2. Conversão de Temperatura
+- Escreva um programa que converta uma temperatura em graus Celsius para Fahrenheit. O usuário deve inserir a temperatura em Celsius.
+RESPOSTA:#include <stdio.h>
+
+int main() {
+    float celsius, fahrenheit;
+
+    printf("Digite a temperatura em graus Celsius: ");
+    scanf("%f", &celsius);
+
+    fahrenheit = (celsius * 9 / 5) + 32;
+
+    printf("A temperatura em graus Fahrenheit é: %.2f\n", fahrenheit);
+
+    return 0;
+}
+3. Exercício: Verificação de Número Par
+- Peça ao usuário para digitar um número inteiro. Verifique se o número é par ou ímpar e exiba a mensagem correspondente.
+RESPOSTA:#include <stdio.h>
+
+int main() {
+    int num;
+
+    printf("Digite um número inteiro: ");
+    scanf("%d", &num);
+
+    if (num % 2 == 0) {
+        printf("O número é par!\n");
+    } else {
+        printf("O número é ímpar!\n");
+    }
+
+    return 0;
+}
+4. Cálculo de Média Ponderada
+- Leia três notas (pesos 2, 3 e 5) e calcule a média ponderada. Exiba a média resultante.
+RESPOSTA:#include <stdio.h>
+
+int main() {
+    float nota1, nota2, nota3, media;
+
+    printf("Digite a primeira nota: ");
+    scanf("%f", &nota1);
+
+    printf("Digite a segunda nota: ");
+    scanf("%f", &nota2);
+
+    printf("Digite a terceira nota: ");
+    scanf("%f", &nota3);
+
+    media = (nota1 * 2 + nota2 * 3 + nota3 * 5) / 10;
+
+    printf("A média ponderada é: %.2f\n", media);
+
+    return 0;
+}
+5. Troca de Valores
+- Leia dois números inteiros e troque seus valores sem usar uma variável temporária.
+RESPOSTA:#include <stdio.h>
+
+int main() {
+    int num1, num2;
+
+    printf("Digite o primeiro número inteiro: ");
+    scanf("%d", &num1);
+
+    printf("Digite o segundo número inteiro: ");
+    scanf("%d", &num2);
+
+    num1 = num1 + num2;
+    num2 = num1 - num2;
+    num1 = num1 - num2;
+
+    printf("O primeiro número agora é: %d\n", num1);
+    printf("O segundo número agora é: %d\n", num2);
+
+    return 0;
+}
