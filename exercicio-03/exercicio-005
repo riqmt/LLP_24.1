@@ -1,0 +1,72 @@
+1. Atividade com `while`:
+- Descrição: Escreva um programa que exiba os números pares de 1 a 10 usando um loop `while`.
+- Dica: Use o operador de módulo (`%`) para verificar se um número é par.
+RESPOSTA:
+
+#incluir <stdio.h>
+
+int principal() {
+    int eu = 1;
+
+    printf("Números pares de 1 a 10:\n");
+    enquanto (i <= 10) {
+        se (i % 2 == 0) {
+            printf("%d\n", i);
+        }
+        eu++;
+    }
+
+    retornar 0;
+}
+
+2. Atividade com `do while`:
+- Descrição: Crie um programa que solicite ao usuário que adivinhe um número entre 1 e 100. O programa deve continuar solicitando até que o usuário acerte o número ou digite `-1` para sair.
+- Dica: Use um loop `do while` para repetir uma solicitação.
+RESPOSTA:
+
+#incluir <stdio.h>
+#incluir <stdlib.h>
+#incluir <tempo.h>
+
+int principal() {
+    srand(tempo(NULL));
+    int numero_secreto = rand() % 100 + 1;
+    rampa interna;
+
+    printf("Adivinhou um número entre 1 e 100 (-1 para sair):\n");
+    fazer {
+        scanf("%d", ¶da);
+
+        se (pista == -1) {
+            printf("Você desistiu!\n");
+        } else if (chute < numero_secreto) {
+            printf("Muito baixo! Tente novamente.\n");
+        } else if (chute > numero_secreto) {
+            printf("Muito alto! Tente novamente.\n");
+        } outro {
+            printf("Parabéns! Você acertou o número secreto: %d\n", numero_secreto);
+        }
+    } while (chute != -1 && chute != numero_secreto);
+
+    retornar 0;
+}
+
+
+3. Atividade com `for`:
+- Descrição: Escreva um programa que calcule a soma dos primeiros 10 números inteiros positivos usando um loop `for`.
+- Dica: Use uma variável acumulada para calcular a soma.
+RESPOSTA:
+
+#incluir <stdio.h>
+
+int principal() {
+    int soma = 0;
+
+    para (int i = 1; i <= 10; i++) {
+        soma += i;
+    }
+
+    printf("A soma dos primeiros 10 números inteiros positivos é: %d\n", soma);
+
+    retornar 0;
+}
