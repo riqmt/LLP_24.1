@@ -1,0 +1,113 @@
+1. Atividade com `if`:
+- Descrição: Escreva um programa que leia um número inteiro e verifique se ele é positivo, negativo ou zero. Use uma declaração `if`.
+- Dica: Use a função `scanf` para ler o número e compare-o com zero.
+RESPOSTA:#include <stdio.h>
+
+int principal() {
+    int número;
+
+    printf("Digite um número inteiro:\n ");
+    scanf("%d", &numero);
+
+    se (número > 0) {
+        printf("O número é positivo.\n");
+    } senão se (numero < 0) {
+        printf("O número é negativo.\n");
+    } outro {
+        printf("O número é zero.\n");
+    }
+
+    retornar 0;
+}
+
+2. Atividade com `if else`:
+- Descrição: Crie um programa que determine se um ano é bissexto ou não.
+Um ano é bissexto se for divisível por 4, exceto quando for divisível por 100 (a menos que também seja divisível por 400).
+- Dica: Utilize a declaração `if else` para verificar as condições.
+RESPOSTA:#include <stdio.h>
+
+int principal() {
+    ano int;
+
+    printf("Digite um ano: ");
+    scanf("%d", &ano);
+
+    se (ano % 4 == 0) {
+        se (ano % 100 == 0) {
+            se (ano % 400 == 0) {
+                printf("O ano %d é bissexto.\n", ano);
+            } outro {
+                printf("O ano %d não é bissexto.\n", ano);
+            }
+        } outro {
+            printf("O ano %d é bissexto.\n", ano);
+        }
+    } outro {
+        printf("O ano %d não é bissexto.\n", ano);
+    }
+
+    retornar 0;
+}
+
+3. Atividade com `switch`:
+- Descrição: Implemente um programa que leia um número de 1 a 7 e exiba o dia da semana correspondente (1 = domingo, 2 = segunda-feira, etc.).
+- Dica: Use uma estrutura `switch` para associar os números aos dias da semana.
+RESPOSTA:#include <stdio.h>
+
+int principal() {
+    dia inteiro;
+
+    printf("Digite um número de 1 a 7: ");
+    scanf("%d", &dia);
+
+    interruptor (dia) {
+        caso 1:
+            printf("Domingo\n");
+            quebrar;
+        caso 2:
+            printf("Segunda-feira\n");
+            quebrar;
+        caso 3:
+            printf("Terça-feira\n");
+            quebrar;
+        caso 4:
+            printf("Quarta-feira\n");
+            quebrar;
+        caso 5:
+            printf("Quinta-feira\n");
+            quebrar;
+        caso 6:
+            printf("Sexta-feira\n");
+            quebrar;
+        caso 7:
+            printf("Sábado\n");
+            quebrar;
+        padrão:
+            printf("Número inválido. Por favor, digite um número de 1 a 7.\n");
+            quebrar;
+    }
+
+    retornar 0;
+}
+
+4. Atividade com Operador Ternário:
+- Descrição: Escreva um programa que leia dois números inteiros e exiba o maior deles usando o operador ternário.
+- Dica: Use a expressão `(a > b) ? a : b` para encontrar o maior número.
+RESPOSTA:
+#incluir <stdio.h>
+
+int principal() {
+    int a, b, maior;
+
+    printf("Dígito do primeiro número: ");
+    scanf("%d", &a);
+
+    printf("Dígito do segundo número: ");
+    scanf("%d", &b);
+
+    maior = (a > b) ? a : b;
+
+    printf("O maior número é: %d\n", maior);
+
+    retornar 0;
+}
