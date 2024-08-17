@@ -1,0 +1,59 @@
+1. Atividade com Array Unidimensional:
+- Descrição: Escreva um programa que leia 5 números inteiros do usuário e armazene-os em um array. Em seguida, exiba a soma desses números.
+- Dica: Use um loop `for` para ler os números e outro loop para calcular a soma.
+RESPOSTA:#include <stdio.h>
+
+int principal() {
+    int números[5];
+    int soma = 0;
+
+    printf("Digite 5 números inteiros:\n");
+    para (int i = 0; i < 5; i++) {
+        printf("Número %d: ", i + 1);
+        scanf("%d", &numeros[i]);
+    }
+
+    printf("Os números digitados foram: ");
+    para (int i = 0; i < 5; i++) {
+        printf("%d ", numeros[i]);
+        soma += numeros[i];
+    }
+    printf("\n");
+
+    printf("A soma dos números é: %d\n", soma);
+
+    retornar 0;
+}
+
+2. Atividade com Array Multidimensional (Matriz):
+- Descrição: Crie um programa que leia uma matriz 3x3 (ou seja, uma matriz com 3 linhas e 3 colunas) e exiba a soma dos elementos da diagonal principal.
+- Dica: Use um loop `for` aninhado para ler os elementos da matriz e calcule a soma dos elementos da diagonal principal.
+RESPOSTA:#include <stdio.h>
+
+int principal() {
+    int matriz[3][3];
+    int soma = 0;
+
+    printf("Digite os elementos da matriz 3x3:\n");
+    para (int i = 0; i < 3; i++) {
+        para (int j = 0; j < 3; j++) {
+            printf("Elemento [%d][%d]: ", i + 1, j + 1);
+            scanf("%d", &matriz[i][j]);
+        }
+    }
+
+    printf("A matriz digitada foi:\n");
+    para (int i = 0; i < 3; i++) {
+        para (int j = 0; j < 3; j++) {
+            printf("%d ", matriz[i][j]);
+            se (i == j) {
+                soma += matriz[i][j];
+            }
+        }
+        printf("\n");
+    }
+
+    printf("A soma dos elementos da diagonal principal é: %d\n", soma);
+
+    retornar 0;
+}
